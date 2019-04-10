@@ -1,0 +1,15 @@
+<h2>listado de camareros</h2>
+
+<div *ngIf="camareros">
+<table>
+  <tr>
+    <th>Codigo</th>
+    <th>Nombre</th>
+  </tr>
+  <tr *ngFor = "let camarero of camareros">
+    <td>{{camarero.codigo}}</td>
+    <td>{{camarero.nombre}}</td>
+
+  </tr>
+</table>
+</div>
